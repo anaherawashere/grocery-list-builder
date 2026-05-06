@@ -1,17 +1,17 @@
-export type Ingredient = {
+export interface Ingredient {
   name: string
   quantity: number
   unit: string
 }
 
-export type Recipe = {
+export interface Recipe {
   id: string
   name: string
   serves: number
   ingredients: Ingredient[]
 }
 
-export type ShoppingListItem = {
+export interface ShoppingListItem {
   name: string
   totalQuantity: number
   unit: string
